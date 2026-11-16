@@ -42,7 +42,9 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     ArtSpaceTheme(darkTheme = false) {
-        Greeting("Android")
+        Surface {
+            Greeting("Android")
+        }
     }
 }
 
@@ -50,6 +52,8 @@ fun GreetingPreview() {
 @Composable
 fun GreetingDarkPreview() {
     ArtSpaceTheme(darkTheme = true) {
-        Greeting("Android")
+        Surface {
+            Greeting("Android")
+        }
     }
 }
