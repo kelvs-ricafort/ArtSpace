@@ -11,7 +11,11 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material3.Button
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
@@ -36,6 +40,7 @@ import androidx.compose.ui.unit.sp
 import com.kelvsricafort101.wordpress.artspace.R
 import com.kelvsricafort101.wordpress.artspace.data.Artwork
 import com.kelvsricafort101.wordpress.artspace.navigation.NavigationDestination
+import com.kelvsricafort101.wordpress.artspace.ui.ArtSpaceTopAppBar
 import com.kelvsricafort101.wordpress.artspace.ui.theme.ArtSpaceTheme
 
 object HomeDestination: NavigationDestination {
@@ -47,13 +52,30 @@ object HomeDestination: NavigationDestination {
  */
 @Composable
 fun HomeScreen(
+    openDrawer: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     val scrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()
 
     Scaffold(
         modifier = modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
-        topBar = {}
+        topBar = {
+            ArtSpaceTopAppBar(
+                title = stringResource(HomeDestination.titleRes),
+                canNavigateBack = false,
+                scrollBehavior = scrollBehavior,
+                navigationIcon = {
+                    IconButton(
+                        onClick = openDrawer
+                    ) {
+                        Icon(
+                            imageVector = Icons.Default.Menu,
+                            contentDescription = stringResource(R.string.open_navigation_drawer)
+                        )
+                    }
+                }
+            )
+        }
     ) { innerPadding ->
         HomeBody(
             modifier = modifier.padding(innerPadding)
@@ -207,6 +229,7 @@ fun HomeScreenPreview() {
     ArtSpaceTheme(darkTheme = false) {
         Surface {
             HomeScreen(
+                openDrawer = {},
                 modifier = Modifier
             )
         }
@@ -219,6 +242,7 @@ fun HomeScreenDarkPreview() {
     ArtSpaceTheme(darkTheme = true) {
         Surface {
             HomeScreen(
+                openDrawer = {},
                 modifier = Modifier
             )
         }
