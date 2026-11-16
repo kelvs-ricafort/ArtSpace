@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Art Space</string>
+    <string name="artist_and_year">Artist: %1$s, %2$d</string>
+    <string name="artwork_content_description">Artwork: %1$s</string>
 </resources>
