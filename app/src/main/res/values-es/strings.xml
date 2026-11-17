@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Art Space</string>
+    <string name="about_app_description">Explora bellas obras de arte, descubre artistas famosos y disfruta de tu propia experiencia en una galería de arte.</string>
+    <string name="appearance">Apariencia</string>
+    <string name="dark_mode">Modo Oscuro</string>
+    <string name="dark_mode_description">Utiliza un tema de color oscuro en toda la aplicación.</string>
+    <string name="language">Idioma</string>
+    <string name="language_english">inglés</string>
+    <string name="language_filipino">Filipino</string>
+    <string name="language_spanish">Español</string>
+</resources>

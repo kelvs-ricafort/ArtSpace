@@ -86,6 +86,10 @@ fun SettingsScreen(
                 text = stringResource(R.string.language),
                 style = MaterialTheme.typography.titleLarge
             )
+            LanguageSelector(
+                selectedLanguage = selectedLanguage,
+                onLanguageSelected = onLanguageSelected
+            )
         }
     }
 }

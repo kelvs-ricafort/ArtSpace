@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Art Space</string>
+    <string name="about_app_description">Galugarin ang magagandang likhang sining, tuklasin ang mga sikat na artista, at tamasahin ang sarili mong karanasan sa art gallery.</string>
+    <string name="appearance">Hitsura</string>
+    <string name="dark_mode">Madilim na Mode</string>
+    <string name="dark_mode_description">Gumamit ng madilim na tema ng kulay sa buong app.</string>
+    <string name="language">Wika</string>
+    <string name="language_english">Ingles</string>
+    <string name="language_filipino">Filipino</string>
+    <string name="language_spanish">Español</string>
+</resources>
