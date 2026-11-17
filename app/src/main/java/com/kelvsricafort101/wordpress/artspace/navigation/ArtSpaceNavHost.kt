@@ -7,10 +7,14 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
+import com.kelvsricafort101.wordpress.artspace.data.AppLanguage
 import com.kelvsricafort101.wordpress.artspace.ui.screens.AboutAppDestination
 import com.kelvsricafort101.wordpress.artspace.ui.screens.AboutScreen
 import com.kelvsricafort101.wordpress.artspace.ui.screens.HomeDestination
 import com.kelvsricafort101.wordpress.artspace.ui.screens.HomeScreen
+import com.kelvsricafort101.wordpress.artspace.ui.screens.SettingsDestination
+import com.kelvsricafort101.wordpress.artspace.ui.screens.SettingsScreen
+import com.kelvsricafort101.wordpress.artspace.ui.screens.SettingsUiState
 
 /**
  * Provides Navigation Graph for the application.
@@ -18,6 +22,9 @@ import com.kelvsricafort101.wordpress.artspace.ui.screens.HomeScreen
 @Composable
 fun ArtSpaceNavHost(
     navController: NavHostController,
+    settingsUiState: SettingsUiState,
+    onDarkModeChanged: (Boolean) -> Unit,
+    onLanguageSelected: (AppLanguage) -> Unit,
     modifier: Modifier = Modifier
 ) {
     val navBackStackEntry by navController.currentBackStackEntryAsState()
@@ -52,6 +59,17 @@ fun ArtSpaceNavHost(
                     onNavigateUp = {
                         navController.navigateUp()
                     }
+                )
+            }
+            composable(route = SettingsDestination.route) {
+                SettingsScreen(
+                    onNavigateUp = {
+                        navController.navigateUp()
+                    },
+                    darkMode = settingsUiState.darkMode,
+                    onDarkModeChanged = onDarkModeChanged,
+                    selectedLanguage = AppLanguage.ENGLISH,
+                    onLanguageSelected = onLanguageSelected
                 )
             }
         }
