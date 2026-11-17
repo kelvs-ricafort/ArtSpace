@@ -3,6 +3,7 @@ package com.kelvsricafort101.wordpress.artspace.navigation
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.Info
 import androidx.compose.material3.DrawerValue
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
@@ -17,6 +18,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.kelvsricafort101.wordpress.artspace.R
+import com.kelvsricafort101.wordpress.artspace.ui.screens.AboutAppDestination
 import com.kelvsricafort101.wordpress.artspace.ui.screens.HomeDestination
 import kotlinx.coroutines.launch
 
@@ -61,6 +63,26 @@ fun ArtSpaceNavigationDrawer(
                         Icon(
                             imageVector = Icons.Default.Home,
                             contentDescription = stringResource(R.string.home)
+                        )
+                    }
+                )
+                NavigationDrawerItem(
+                    label = {
+                        Text(
+                            text = stringResource(R.string.about_app)
+                        )
+                    },
+                    selected = selectedRoute == AboutAppDestination.route,
+                    onClick = {
+                        scope.launch {
+                            drawerState.close()
+                        }
+                        onNavigate(AboutAppDestination.route)
+                    },
+                    icon = {
+                        Icon(
+                            imageVector = Icons.Default.Info,
+                            contentDescription = stringResource(R.string.about_app)
                         )
                     }
                 )

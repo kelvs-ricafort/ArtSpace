@@ -5,4 +5,21 @@
     <string name="open_navigation_drawer">Open Navigation Drawer</string>
     <string name="home">Home</string>
     <string name="back_button">Back</string>
+    <!-- About -->
+    <string name="about_app">About App</string>
+    <string name="about_app_description">Explore beautiful artworks, discover famous artists, and enjoy your own art gallery experience.</string>
+    <string name="app_info">App Info</string>
+    <string name="version">Version: %1$s</string>
+    <string name="build">Build: %1$d</string>
+    <string name="app_features">App Features</string>
+    <!-- Developer Info -->
+    <string name="developer_info">Developer info</string>
+    <string name="developer">Developer: %1$s</string>
+    <string name="developer_name">Kelvin Ricafort</string>
+    <string name="artwork_gallery">Explore artwork collections</string>
+    <string name="select_image_from_gallery">Select images from your gallery</string>
+    <string name="navigate_between_artworks">Navigate between artworks</string>
+    <string name="dark_mode_support">Dark Mode Support</string>
+    <string name="multiple_language_support">Multiple Language Support</string>
+    <string name="customizable_settings">Customizable Settings</string>
 </resources>
