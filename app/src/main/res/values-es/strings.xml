@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Art Space</string>
+    <string name="selected_gallery_image">Imagen seleccionada de la galería</string>
+    <string name="choose_from_gallery">Elige de la galería</string>
     <string name="about_app_description">Explora bellas obras de arte, descubre artistas famosos y disfruta de tu propia experiencia en una galería de arte.</string>
     <string name="appearance">Apariencia</string>
     <string name="dark_mode">Modo Oscuro</string>
@@ -9,4 +11,18 @@
     <string name="language_english">inglés</string>
     <string name="language_filipino">Filipino</string>
     <string name="language_spanish">Español</string>
+    <string name="artwork_mona_lisa_description">La Mona Lisa es un retrato de medio cuerpo pintado por el artista italiano Leonardo da Vinci.</string>
+
+    <string name="artwork_starry_night_description">La noche estrellada es una pintura al óleo del pintor postimpresionista holandés Vincent van Gogh.</string>
+    <string name="artwork_the_scream_description">El Grito es una pintura al óleo de 1893 del artista noruego Edvard Munch.</string>
+    <string name="artwork_mount_mayon_description">El monte Mayon es un estratovolcán activo ubicado en la provincia de Albay, en la región de Bicol, Filipinas. Es un popular destino turístico y se distingue por su cono perfecto, gracias a su forma cónica simétrica.</string>
+    <string name="artwork_shadow_description">Shadow es mi primera mascota, un gato.</string>
+    <string name="artwork_ampi_description">Ampi es mi segundo gato.</string>
+    <string name="artwork_adolfo_description">Adolfo es mi tercer gato.</string>
+    <string name="artwork_zombie_description">Zombie es mi cuarto gato mascota.</string>
+    <string name="artwork_maru_description">Maru es mi quinto gato.</string>
+    <string name="artwork_gandalf_description">Gandalf es mi sexto gato.</string>
+    <string name="previous">Anterior</string>
+    <string name="next">Próximo</string>
+
 </resources>

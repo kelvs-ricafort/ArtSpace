@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Art Space</string>
+    <string name="selected_gallery_image">Napiling larawan ng gallery</string>
+    <string name="choose_from_gallery">Pumili mula sa gallery</string>
     <string name="about_app_description">Galugarin ang magagandang likhang sining, tuklasin ang mga sikat na artista, at tamasahin ang sarili mong karanasan sa art gallery.</string>
     <string name="appearance">Hitsura</string>
     <string name="dark_mode">Madilim na Mode</string>
@@ -9,4 +11,19 @@
     <string name="language_english">Ingles</string>
     <string name="language_filipino">Filipino</string>
     <string name="language_spanish">Español</string>
+    <string name="artwork_mona_lisa_description">Ang Mona Lisa ay isang kalahating-haba na larawang pinta ng Italyanong pintor na si Leonardo da Vinci.</string>
+
+    <string name="artwork_starry_night_description">Ang The Starry Night ay isang oil painting ng post-impresyonistang pintor na Dutch na si Vincent van Gogh.</string>
+    <string name="artwork_the_scream_description">Ang \"The Scream\" ay isang oil painting noong 1893 ng Norwegian artist na si Edvard Munch.</string>
+    <string name="artwork_mount_mayon_description">Ang Bulkang Mayon ay isang aktibong stratovolcano sa lalawigan ng Albay sa Bicol, Pilipinas. Isang sikat na lugar panturista, kilala ito sa perpektong kono dahil sa simetriko nitong hugis-kono.</string>
+    <string name="artwork_shadow_description">Si Shadow ang una kong alagang pusa.</string>
+    <string name="artwork_ampi_description">Si Ampi ang pangalawa kong alagang pusa.</string>
+    <string name="artwork_adolfo_description">Si Adolfo ang pangatlo kong alagang pusa.</string>
+    <string name="artwork_zombie_description">Si Zombie ang pang-apat kong alagang pusa.</string>
+    <string name="artwork_maru_description">Si Maru ang pang-lima kong alagang pusa.</string>
+    <string name="artwork_gandalf_description">Si Gandalf ang pang-anim kong alagang pusa.</string>
+    <string name="previous">Nakaraan</string>
+    <string name="next">Susunod</string>
+
+
 </resources>

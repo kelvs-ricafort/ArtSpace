@@ -6,6 +6,8 @@
     <string name="open_navigation_drawer" translatable="false">Open Navigation Drawer</string>
     <string name="home" translatable="false">Home</string>
     <string name="back_button" translatable="false">Back</string>
+    <string name="selected_gallery_image">Selected gallery image</string>
+    <string name="choose_from_gallery">Choose from the gallery</string>
     <!-- About -->
     <string name="about_app" translatable="false">About App</string>
     <string name="about_app_description">Explore beautiful artworks, discover famous artists, and enjoy your own art gallery experience.</string>
@@ -36,4 +38,31 @@
     <string name="language_filipino">Filipino</string>
     <string name="language_spanish">Spanish</string>
 
+    <!-- Artwork -->
+    <string name="artwork_mona_lisa" translatable="false">Mona Lisa</string>
+    <string name="artist_leonardo_da_vinci" translatable="false">"Leonardo da Vinci"</string>
+    <string name="artwork_mona_lisa_description">The Mona Lisa is a half-length portrait painting by Italian artist Leonardo da Vinci.</string>
+    <string name="artwork_starry_night" translatable="false">The Starry Night</string>
+    <string name="artist_vincent_van_gogh" translatable="false">"Vincent van Gogh"</string>
+    <string name="artwork_starry_night_description">The Starry Night is an oil painting by the Dutch post-impressionist painter Vincent van Gogh.</string>
+    <string name="artwork_the_scream" translatable="false">The Scream</string>
+    <string name="artist_edvard_munch" translatable="false">"Edvard Munch"</string>
+    <string name="artwork_the_scream_description">The Scream is a 1893 oil painting by Norwegian artist Edvard Munch</string>
+    <string name="artwork_mount_mayon" translatable="false">Mount Mayon</string>
+    <string name="artist_kelvin_ricafort" translatable="false">Kelvin Ricafort</string>
+    <string name="artwork_mount_mayon_description">Mount Mayon is an active stratovolcano in the province of Albay in Bicol, Philippines. A popular tourist spot, it is renowned for its perfect cone because of its symmetric conical shape.</string>
+    <string name="artwork_shadow" translatable="false">Shadow</string>
+    <string name="artwork_shadow_description">Shadow is my 1st pet cat.</string>
+    <string name="artwork_ampi" translatable="false">Ampi</string>
+    <string name="artwork_ampi_description">Ampi is my 2nd pet cat.</string>
+    <string name="artwork_adolfo" translatable="false">Adolfo</string>
+    <string name="artwork_adolfo_description">Adolfo is my 3rd pet cat.</string>
+    <string name="artwork_zombie" translatable="false">Zombie</string>
+    <string name="artwork_zombie_description">Zombie is my 4th pet cat.</string>
+    <string name="artwork_maru" translatable="false">Maru</string>
+    <string name="artwork_maru_description">Maru is my 5th pet cat.</string>
+    <string name="artwork_gandalf" translatable="false">Gandalf</string>
+    <string name="artwork_gandalf_description">Gandalf is my 6th pet cat.</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
 </resources>

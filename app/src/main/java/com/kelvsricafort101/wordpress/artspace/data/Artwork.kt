@@ -1,11 +1,12 @@
 package com.kelvsricafort101.wordpress.artspace.data
 
 import androidx.annotation.DrawableRes
+import androidx.annotation.StringRes
 
 data class Artwork(
-    val title: String,
-    val artist: String,
+    @StringRes val title: Int,
+    @StringRes val artist: Int,
     val year: Int,
     @DrawableRes val imageRes: Int,
-    val description: String
+    @StringRes val description: Int
 )

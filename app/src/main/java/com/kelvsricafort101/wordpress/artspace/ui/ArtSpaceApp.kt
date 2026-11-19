@@ -1,6 +1,7 @@
 package com.kelvsricafort101.wordpress.artspace.ui
 
 import android.content.res.Configuration
+import androidx.activity.compose.LocalActivityResultRegistryOwner
 import androidx.compose.foundation.layout.RowScope
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
@@ -38,6 +39,7 @@ fun ArtSpaceApp(
 ) {
     val context = LocalContext.current
     val currentConfiguration = LocalConfiguration.current
+    val activityResultRegistryOwner = LocalActivityResultRegistryOwner.current
     val settingsDataStore = remember{ SettingsDataStore(context = context.applicationContext) }
     val settingsViewModel: SettingsViewModel = viewModel(factory = SettingsViewModelFactory(settingsDataStore = settingsDataStore))
     val settingsUiState by settingsViewModel.uiState.collectAsState()
@@ -59,7 +61,8 @@ fun ArtSpaceApp(
 
     CompositionLocalProvider(
         LocalContext provides localizedContext,
-        LocalConfiguration provides configuration
+        LocalConfiguration provides configuration,
+        LocalActivityResultRegistryOwner provides activityResultRegistryOwner!!
     ) {
         ArtSpaceTheme(
             darkTheme = settingsUiState.darkMode
